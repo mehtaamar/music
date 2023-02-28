@@ -1,0 +1,237 @@
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+.navbar {
+  overflow:scroll;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* Songs button area */
+.Songs-button {
+	height: 100vh;
+	width: 100%;
+	background: url(./Media/Image/bg-songs.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.Songs-button .texto h2 > span {
+	padding-top: 15rem;
+	padding-bottom: 3rem;
+	padding-left: 3.0rem;
+	display: block;
+	font-weight: bold;
+	font-size: 5.0rem;
+	color: black;
+	letter-spacing: .2rem;
+}
+
+
+.Songs-button .container-songs .lolbutt a > button {
+	font-size: 2.0rem;
+  height: 10%%;
+	width: 40%;
+  display: block;
+	border: .3rem solid;
+  justify-content: center;
+  text-align: center;
+	padding: 0.5rem 0.5rem;
+	position: relative;
+	background-clip: padding-box;
+	background: white;
+	color: #eca7a6;
+	font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+	border-width: .3rem;
+	border-radius: .4rem;
+	border-color: #eca7a6;
+	transition: background 0.1s ease;
+    text-decoration: none;
+}
+.Songs-button .container-songs .lolbutt a > button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.Songs-button .container-songs .lolbutt a > button:hover {
+	background: #eca7a6;
+	color: white;
+	background-clip: padding-box;
+}
+/* FOOTER */
+
+.footer-area {
+	height: 100vh; 
+	width: 100%;
+	background-color: antiquewhite;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* about */
+.about-section {
+  padding: 50px;
+  text-align: center;
+  color: black;
+}
+
+
+
